@@ -1,0 +1,185 @@
+Dataset built:
+X shape: (1568, 9, 9, 96)
+y distribution: [  0 588 392 588]
+Dataset: (1568, 9, 9, 96)
+
+Dataset split:
+Train: [  0 470 314 470]
+Val: [ 0 59 39 59]
+Test: [ 0 59 39 59]
+Train: [  0 470 314 470]
+Val: [ 0 59 39 59]
+Test: [ 0 59 39 59]
+
+=========== Training CNN BASELINE ===========
+Using device: cpu
+Warning: missing classes → disabling class weights
+Epoch 1/40 | Train Acc 0.4029 | Val Acc 0.3949
+Epoch 2/40 | Train Acc 0.4241 | Val Acc 0.4076
+Epoch 3/40 | Train Acc 0.4355 | Val Acc 0.4268
+Epoch 4/40 | Train Acc 0.4332 | Val Acc 0.4522
+Epoch 5/40 | Train Acc 0.4355 | Val Acc 0.4586
+Epoch 6/40 | Train Acc 0.4461 | Val Acc 0.4713
+Epoch 7/40 | Train Acc 0.4643 | Val Acc 0.4650
+Epoch 8/40 | Train Acc 0.4742 | Val Acc 0.4777
+Epoch 9/40 | Train Acc 0.4552 | Val Acc 0.4713
+Epoch 10/40 | Train Acc 0.4712 | Val Acc 0.4777
+Epoch 11/40 | Train Acc 0.4772 | Val Acc 0.5096
+Epoch 12/40 | Train Acc 0.5091 | Val Acc 0.5223
+Epoch 13/40 | Train Acc 0.5197 | Val Acc 0.5541
+Epoch 14/40 | Train Acc 0.5546 | Val Acc 0.5860
+Epoch 15/40 | Train Acc 0.5554 | Val Acc 0.5987
+Epoch 16/40 | Train Acc 0.5645 | Val Acc 0.6178
+Epoch 17/40 | Train Acc 0.6055 | Val Acc 0.6115
+Epoch 18/40 | Train Acc 0.6123 | Val Acc 0.5924
+Epoch 19/40 | Train Acc 0.6093 | Val Acc 0.6178
+Epoch 20/40 | Train Acc 0.5994 | Val Acc 0.6242
+Epoch 21/40 | Train Acc 0.5971 | Val Acc 0.6497
+Epoch 22/40 | Train Acc 0.6442 | Val Acc 0.6688
+Epoch 23/40 | Train Acc 0.6472 | Val Acc 0.6688
+Epoch 24/40 | Train Acc 0.6722 | Val Acc 0.6752
+Epoch 25/40 | Train Acc 0.6889 | Val Acc 0.6561
+Epoch 26/40 | Train Acc 0.6897 | Val Acc 0.6815
+Epoch 27/40 | Train Acc 0.6889 | Val Acc 0.7070
+Epoch 28/40 | Train Acc 0.6821 | Val Acc 0.7134
+Epoch 29/40 | Train Acc 0.6995 | Val Acc 0.6688
+Epoch 30/40 | Train Acc 0.6874 | Val Acc 0.7134
+Epoch 31/40 | Train Acc 0.6798 | Val Acc 0.6879
+Epoch 32/40 | Train Acc 0.7193 | Val Acc 0.7389
+Epoch 33/40 | Train Acc 0.7223 | Val Acc 0.7325
+Epoch 34/40 | Train Acc 0.7557 | Val Acc 0.7580
+Epoch 35/40 | Train Acc 0.7428 | Val Acc 0.7707
+Epoch 36/40 | Train Acc 0.7686 | Val Acc 0.7643
+Epoch 37/40 | Train Acc 0.7557 | Val Acc 0.7834
+Epoch 38/40 | Train Acc 0.7762 | Val Acc 0.7707
+Epoch 39/40 | Train Acc 0.7747 | Val Acc 0.7898
+Epoch 40/40 | Train Acc 0.7701 | Val Acc 0.7834
+
+Test Classification Report
+              precision    recall  f1-score   support
+
+           1     0.7692    0.8475    0.8065        59
+           2     0.8261    0.4872    0.6129        39
+           3     0.7681    0.8983    0.8281        59
+
+    accuracy                         0.7771       157
+   macro avg     0.7878    0.7443    0.7492       157
+weighted avg     0.7829    0.7771    0.7665       157
+
+=========== Training DMLPFFN ===========
+Using device: cpu
+Warning: missing classes → disabling class weights
+Epoch 1/40 | Train Acc 0.3525 | Val Acc 0.5796
+Epoch 2/40 | Train Acc 0.3852 | Val Acc 0.4904
+Epoch 3/40 | Train Acc 0.4458 | Val Acc 0.5605
+Epoch 4/40 | Train Acc 0.4545 | Val Acc 0.6115
+Epoch 5/40 | Train Acc 0.4474 | Val Acc 0.6115
+Epoch 6/40 | Train Acc 0.5247 | Val Acc 0.6051
+Epoch 7/40 | Train Acc 0.5279 | Val Acc 0.6561
+Epoch 8/40 | Train Acc 0.5574 | Val Acc 0.6497
+Epoch 9/40 | Train Acc 0.5598 | Val Acc 0.6497
+Epoch 10/40 | Train Acc 0.5518 | Val Acc 0.6497
+Epoch 11/40 | Train Acc 0.5558 | Val Acc 0.6943
+Epoch 12/40 | Train Acc 0.6005 | Val Acc 0.7134
+Epoch 13/40 | Train Acc 0.6324 | Val Acc 0.7070
+Epoch 14/40 | Train Acc 0.6794 | Val Acc 0.8089
+Epoch 15/40 | Train Acc 0.7113 | Val Acc 0.8535
+Epoch 16/40 | Train Acc 0.7384 | Val Acc 0.8344
+Epoch 17/40 | Train Acc 0.7488 | Val Acc 0.8089
+Epoch 18/40 | Train Acc 0.7671 | Val Acc 0.8535
+Epoch 19/40 | Train Acc 0.7584 | Val Acc 0.8535
+Epoch 20/40 | Train Acc 0.7735 | Val Acc 0.8726
+Epoch 21/40 | Train Acc 0.7783 | Val Acc 0.8025
+Epoch 22/40 | Train Acc 0.7807 | Val Acc 0.8280
+Epoch 23/40 | Train Acc 0.7847 | Val Acc 0.8662
+Epoch 24/40 | Train Acc 0.8301 | Val Acc 0.9172
+Epoch 25/40 | Train Acc 0.8485 | Val Acc 0.9299
+Epoch 26/40 | Train Acc 0.8557 | Val Acc 0.9554
+Epoch 27/40 | Train Acc 0.8533 | Val Acc 0.9809
+Epoch 28/40 | Train Acc 0.8692 | Val Acc 0.9745
+Epoch 29/40 | Train Acc 0.8700 | Val Acc 0.9745
+Epoch 30/40 | Train Acc 0.9019 | Val Acc 0.9745
+Epoch 31/40 | Train Acc 0.8620 | Val Acc 0.9554
+Epoch 32/40 | Train Acc 0.8692 | Val Acc 0.9682
+Epoch 33/40 | Train Acc 0.8780 | Val Acc 0.9809
+Epoch 34/40 | Train Acc 0.8876 | Val Acc 0.9873
+Epoch 35/40 | Train Acc 0.9043 | Val Acc 1.0000
+Epoch 36/40 | Train Acc 0.9258 | Val Acc 0.9745
+Epoch 37/40 | Train Acc 0.9147 | Val Acc 0.9936
+Epoch 38/40 | Train Acc 0.9370 | Val Acc 0.9936
+Epoch 39/40 | Train Acc 0.9338 | Val Acc 0.9936
+Epoch 40/40 | Train Acc 0.9290 | Val Acc 0.9936
+
+Test Classification Report
+              precision    recall  f1-score   support
+
+           1     1.0000    0.9661    0.9828        59
+           2     0.9500    0.9744    0.9620        39
+           3     0.9833    1.0000    0.9916        59
+
+    accuracy                         0.9809       157
+   macro avg     0.9778    0.9802    0.9788       157
+weighted avg     0.9813    0.9809    0.9809       157
+
+
+Generating synthetic samples using VAE...
+Loading pretrained VAE from vae_model.pth
+Synthetic samples kept: (200, 9, 9, 96)
+Augmented dataset: (1454, 9, 9, 96)
+
+=========== Training CNN + GENAI ===========
+Using device: cpu
+Warning: missing classes → disabling class weights
+Epoch 1/40 | Train Acc 0.3724 | Val Acc 0.3758
+Epoch 2/40 | Train Acc 0.3923 | Val Acc 0.3885
+Epoch 3/40 | Train Acc 0.3987 | Val Acc 0.4268
+Epoch 4/40 | Train Acc 0.4362 | Val Acc 0.4777
+Epoch 5/40 | Train Acc 0.4498 | Val Acc 0.5032
+Epoch 6/40 | Train Acc 0.4346 | Val Acc 0.5541
+Epoch 7/40 | Train Acc 0.4394 | Val Acc 0.5541
+Epoch 8/40 | Train Acc 0.4577 | Val Acc 0.5605
+Epoch 9/40 | Train Acc 0.4609 | Val Acc 0.5541
+Epoch 10/40 | Train Acc 0.4888 | Val Acc 0.5605
+Epoch 11/40 | Train Acc 0.4841 | Val Acc 0.5478
+Epoch 12/40 | Train Acc 0.5128 | Val Acc 0.5796
+Epoch 13/40 | Train Acc 0.5335 | Val Acc 0.5605
+Epoch 14/40 | Train Acc 0.5391 | Val Acc 0.5796
+Epoch 15/40 | Train Acc 0.6037 | Val Acc 0.6178
+Epoch 16/40 | Train Acc 0.6124 | Val Acc 0.6242
+Epoch 17/40 | Train Acc 0.6077 | Val Acc 0.6178
+Epoch 18/40 | Train Acc 0.6116 | Val Acc 0.6306
+Epoch 19/40 | Train Acc 0.6531 | Val Acc 0.6497
+Epoch 20/40 | Train Acc 0.6132 | Val Acc 0.6561
+Epoch 21/40 | Train Acc 0.6284 | Val Acc 0.6561
+Epoch 22/40 | Train Acc 0.6332 | Val Acc 0.6624
+Epoch 23/40 | Train Acc 0.6722 | Val Acc 0.7197
+Epoch 24/40 | Train Acc 0.7002 | Val Acc 0.7452
+Epoch 25/40 | Train Acc 0.7105 | Val Acc 0.7325
+Epoch 26/40 | Train Acc 0.7105 | Val Acc 0.7325
+Epoch 27/40 | Train Acc 0.7089 | Val Acc 0.7516
+Epoch 28/40 | Train Acc 0.7544 | Val Acc 0.7452
+Epoch 29/40 | Train Acc 0.7472 | Val Acc 0.7452
+Epoch 30/40 | Train Acc 0.7376 | Val Acc 0.7516
+Epoch 31/40 | Train Acc 0.7568 | Val Acc 0.7643
+Epoch 32/40 | Train Acc 0.7416 | Val Acc 0.7834
+Epoch 33/40 | Train Acc 0.7727 | Val Acc 0.8153
+Epoch 34/40 | Train Acc 0.7775 | Val Acc 0.7771
+Epoch 35/40 | Train Acc 0.7927 | Val Acc 0.7834
+Epoch 36/40 | Train Acc 0.8054 | Val Acc 0.8217
+Epoch 37/40 | Train Acc 0.7982 | Val Acc 0.8280
+Epoch 38/40 | Train Acc 0.7990 | Val Acc 0.8344
+Epoch 39/40 | Train Acc 0.8070 | Val Acc 0.8025
+Epoch 40/40 | Train Acc 0.8110 | Val Acc 0.8280
+
+Test Classification Report
+              precision    recall  f1-score   support
+
+           1     0.8833    0.8983    0.8908        59
+           2     0.9286    0.6667    0.7761        39
+           3     0.8116    0.9492    0.8750        59
+
+    accuracy                         0.8599       157
+   macro avg     0.8745    0.8380    0.8473       157
+weighted avg     0.8676    0.8599    0.8564       157
+
+
