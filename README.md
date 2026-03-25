@@ -35,9 +35,10 @@ The framework is structured into four distinct phases to ensure robust disease i
 - **Convergence Analysis:** Monitoring training stability using Cosine Annealing learning rate schedules and Early Stopping.
 - **Generalization Check:** Comparative analysis between baseline CNNs and the proposed DMLPFFN + GenAI hybrid across multiple crop domains.
 
-### 4️⃣ Stage 4: Classification Outputs
-- **Progression Mapping:** Categorization into 4 stages of disease manifestation (Early, Mid-Stage 1, Mid-Stage 2, Advanced).
-- **Stress Response Categorization:** Capable of discriminating between stress responses associated with **fungal, bacterial, viral, and nematode** infections.
+### 4️⃣ Stage 4: Classification & Prediction
+- **Inference Pipeline:** Standalone prediction module (`disease_prediction.py`) that implements the mapping from hyperspectral features to diagnostic levels.
+- **Statistical Aggregation:** Uses patch-level majority voting and confidence estimation across the entire hyperspectral cube to ensure robust diagnostics.
+- **Diagnostic Mapping:** Translates model outputs into human-readable infection levels and disease categories (Fungal, Bacterial, Viral, Nematode).
 
 ---
 
@@ -71,6 +72,19 @@ graph TD
 
 ---
 
+## 🔍 Disease Categorization & Mapping
+
+The model translates 4 output classes into specific research-validated categories:
+
+| Class | Infection Level | Disease Category (Symptoms) |
+|:---:|:---|:---|
+| **0** | Healthy / Early Infection | Initial Stress Response (Potential Fungal) |
+| **1** | Low Severity Infection | Fungal Manifestation (Cercospora/Mildew) |
+| **2** | Moderate Severity | Bacterial / Oomycete Stress (Pseudomonas/root-rot) |
+| **3** | Severe / Advanced Stage | Viral or Nematode Stress (Rhizomania/BYV) |
+
+---
+
 ## 📈 Experimental Results
 
 The following results were obtained on the sugarbeet hyperspectral dataset (96 bands, 9x9 patches):
@@ -98,19 +112,28 @@ pip install torch torchvision numpy matplotlib scikit-learn
 ### 2. Prepare Data
 Ensure your `.npy` hyperspectral files are in the directory specified in `config.py` (default: `sugarbeet/`). Files should be named with their corresponding Days After Inoculation (e.g., `beet_dai_5.npy`).
 
-### 3. Run Experiments
+### 3. Run Experiments (Training)
 To train the VAE and run the full benchmarking pipeline:
 ```bash
 python train_vae.py
 python main_experiment.py
 ```
 
+### 4. Disease Prediction (Inference)
+To run prediction on your dataset and generate a diagnostic report:
+```bash
+python disease_prediction.py
+```
+This generates:
+- **`prediction_report.txt`:** A summary of infection levels and confidence for each scanned file.
+- **On-Screen Analysis:** Per-patch distribution and confidence scores.
+
 ---
 
 ## 📝 Authors & Research
 This work is part of a research paper on **Hyperspectral Precision Agriculture**.
 
-- **Primary Researchers:** Tanay Kapoor & Team
+- **Primary Researchers:** Tanay Kapoor, Akash Yadav , Kanika Yadav & Srashti Chauhan
 - **Focus:** Early Diagnostic Support & Data-Driven Decision Making
 
 ---
