@@ -187,6 +187,9 @@ if __name__ == "__main__":
         model_type="dmlpffn",
         use_genai=True
     )
+    # Save the trained model for predicting disease levels and categories
+    torch.save(dmlp_genai_model.state_dict(), "dmlp_genai_model.pth")
+    print("\n[INFO] Trained model saved as dmlp_genai_model.pth for disease categorization.")
 
     # ---------------------------------------------------
     # OPTIONAL: CNN + GENAI (your previous pipeline)
