@@ -1,0 +1,42 @@
+Scanning 9 files in sugarbeet...
+------------------------------------------------------------
+FILE: sugarbeet_20.npy
+  -> INFECTION LEVEL: Severe Infection / Advanced Manifestation (Stage 4)
+  -> CATEGORY       : Viral or Nematode Stress (Rhizomania/BYV)
+  -> CONFIDENCE     : 100.00%
+------------------------------------------------------------
+FILE: sugarbeet_18.npy
+  -> INFECTION LEVEL: Severe Infection / Advanced Manifestation (Stage 4)
+  -> CATEGORY       : Viral or Nematode Stress (Rhizomania/BYV)
+  -> CONFIDENCE     : 100.00%
+------------------------------------------------------------
+FILE: sugarbeet_19.npy
+  -> INFECTION LEVEL: Severe Infection / Advanced Manifestation (Stage 4)
+  -> CATEGORY       : Viral or Nematode Stress (Rhizomania/BYV)
+  -> CONFIDENCE     : 100.00%
+------------------------------------------------------------
+FILE: sugarbeet_8.npy
+  -> INFECTION LEVEL: Moderate Severity Infection (Stage 3)
+  -> CATEGORY       : Bacterial / Oomycete Stress (Pseudomonas/root-rot)
+  -> CONFIDENCE     : 97.96%
+------------------------------------------------------------
+FILE: sugarbeet_9.npy
+  -> INFECTION LEVEL: Moderate Severity Infection (Stage 3)
+  -> CATEGORY       : Bacterial / Oomycete Stress (Pseudomonas/root-rot)
+  -> CONFIDENCE     : 99.49%
+------------------------------------------------------------
+FILE: sugarbeet_4.npy
+  -> INFECTION LEVEL: Low Severity Infection (Stage 2)
+  -> CATEGORY       : Fungal Manifestation (Cercospora/Mildew)
+  -> CONFIDENCE     : 99.49%
+------------------------------------------------------------
+FILE: sugarbeet_5.npy
+  -> INFECTION LEVEL: Low Severity Infection (Stage 2)
+  -> CATEGORY       : Fungal Manifestation (Cercospora/Mildew)
+  -> CONFIDENCE     : 98.98%
+------------------------------------------------------------
+FILE: sugarbeet_7.npy
+  -> INFECTION LEVEL: Low Severity Infection (Stage 2)
+  -> CATEGORY       : Fungal Manifestation (Cercospora/Mildew)
+  -> CONFIDENCE     : 100.00%
+------------------------------------------------------------
